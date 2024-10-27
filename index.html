@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zoryktom - Data Scientist & Health Informatics Enthusiast</title>
+  <title>Zorykto - Data Scientist & Health Informatics Enthusiast</title>
   <style>
     /* CSS Variables */
     :root {
@@ -13,6 +13,8 @@
       --highlight-color: #e94560;
       --text-light: #eaeaea;
       --text-dark: #333;
+      --button-bg: #e94560;
+      --button-hover: #ff6587;
     }
 
     /* Global Styles */
@@ -28,54 +30,57 @@
     header {
       background: linear-gradient(135deg, var(--accent-color), var(--highlight-color));
       text-align: center;
-      padding: 2rem;
+      padding: 3rem 1.5rem;
       color: var(--text-light);
       position: relative;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1.1rem; font-weight: 300; }
+    header h1 { font-size: 3rem; font-weight: 700; }
+    header p { font-size: 1.2rem; font-weight: 300; }
 
     /* Navigation Bar */
     nav {
       display: flex;
       justify-content: center;
       background-color: var(--secondary-bg);
-      padding: 1rem;
+      padding: 1.2rem;
     }
     nav a {
       color: var(--text-light);
       text-decoration: none;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 1.2rem;
       margin: 0 0.5rem;
       font-weight: bold;
       position: relative;
+      transition: color 0.3s ease, transform 0.2s ease;
     }
     nav a:hover {
       color: var(--highlight-color);
       text-shadow: 0px 0px 8px var(--highlight-color);
+      transform: scale(1.1);
     }
 
-    /* Container for sections */
+    /* Main Container */
     .container {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 2rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1.5rem;
       display: grid;
-      grid-gap: 1.5rem;
+      gap: 1.8rem;
       grid-template-columns: 1fr;
     }
 
     /* Section styling */
     .section {
-      padding: 1.5rem;
       background-color: var(--secondary-bg);
-      border-radius: 10px;
-      transition: transform 0.3s ease-in-out;
-      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      position: relative;
     }
     .section:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
       background-color: var(--highlight-color);
     }
     h2 { color: var(--highlight-color); }
@@ -86,44 +91,51 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1rem;
+      padding-top: 1rem;
     }
     ul li {
       background: rgba(255, 255, 255, 0.1);
-      padding: 0.8rem;
-      border-radius: 8px;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: background 0.3s;
     }
+    ul li:hover { background: rgba(255, 255, 255, 0.2); }
     
-    /* Contact Section */
+    /* Contact Button */
     #contact a {
-      color: var(--highlight-color);
+      display: inline-block;
+      padding: 0.6rem 1.4rem;
+      background-color: var(--button-bg);
+      color: var(--text-light);
       text-decoration: none;
       font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
     }
+    #contact a:hover { background-color: var(--button-hover); }
 
     /* Footer */
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       background: var(--secondary-bg);
       color: var(--text-light);
       font-size: 0.9rem;
     }
 
     /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    .section {
-      animation: fadeIn 0.5s ease-in;
-    }
+    .section { animation: slideIn 0.6s ease-out; }
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <h1>Zoryktom - Data Scientist</h1>
+    <h1>Zorykto - Data Scientist</h1>
     <p>Data Science | Health Informatics | Machine Learning</p>
   </header>
 
@@ -182,12 +194,13 @@
     <section id="contact" class="section">
       <h2>📫 How to Reach Me</h2>
       <p>Email: <a href="mailto:zmk36@pitt.edu">zmk36@pitt.edu</a></p>
+      <a href="mailto:zmk36@pitt.edu" class="button">Contact Me</a>
     </section>
   </div>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Zoryktom. All rights reserved.</p>
+    <p>&copy; 2024 Zorykto. All rights reserved.</p>
   </footer>
 
 </body>
