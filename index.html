@@ -1,133 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zorykto - Aspiring Data Scientist</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f4f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #4a90e2;
-      color: #fff;
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-      padding: 1rem 0;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 1rem 2rem;
-      margin: 0 1rem;
-      transition: background-color 0.3s;
-    }
-    nav a:hover {
-      background-color: #4a90e2;
-      border-radius: 5px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid #4a90e2;
-      margin: 1rem auto;
-      display: block;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-    h2 {
-      color: #4a90e2;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #333;
-      color: #fff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Data Scientist Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Zorykto - Aspiring Data Scientist</h1>
-    <p>Data Science | Health Informatics | Machine Learning | Web Development</p>
-  </header>
+<header>
+    <h1>Your Name</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#courses">Current Courses</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="container">
 
-  <!-- Main Container -->
-  <div class="container">
-
-    <!-- About Section -->
-    <section id="about">
-      <img src="URL_TO_YOUR_PROFILE_PICTURE" alt="Zorykto's Profile Picture" class="profile-pic">
-      <h2>About Me</h2>
-      <p>I'm an aspiring data scientist and a current master's student in <strong>health informatics</strong> at the <strong>University of Pittsburgh</strong>. I am looking for internships or full-time opportunities in web development and data science. My ambition is to leverage data to improve healthcare outcomes, with a background in <strong>medical terminology</strong> and <strong>HIPAA training</strong>.</p>
-      <p><strong>Fun Fact:</strong> My goal is to use data science to address real-world healthcare challenges, enhancing both research processes and patient care.</p>
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a data scientist with a passion for turning data into actionable insights.</p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Programming Languages:</strong> Python, R, SQL, HTML, CSS, JavaScript</li>
-        <li><strong>Libraries & Frameworks:</strong> Pandas, NumPy, Scikit-Learn, Matplotlib, React</li>
-        <li><strong>Data Science Expertise:</strong> Statistical modeling, data manipulation, data visualization</li>
-        <li><strong>Machine Learning:</strong> Predictive modeling, data mining, natural language processing</li>
-      </ul>
+    <section id="projects" class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>Project 1: Description of your project.</li>
+            <li>Project 2: Description of your project.</li>
+            <li>Project 3: Description of your project.</li>
+        </ul>
     </section>
 
-    <!-- Courses Section -->
-    <section id="courses">
-      <h2>Current Courses</h2>
-      <ul>
-        <li><strong>Practical Statistics & Programming Using R:</strong> Applying statistical methods and programming skills to health data analysis.</li>
-        <li><strong>Introduction to Python for Health Informatics:</strong> Learning Python for healthcare data management.</li>
-        <li><strong>Healthcare Analytics and Data Visualization:</strong> Exploring advanced healthcare analytics and visualization.</li>
-      </ul>
+    <section id="skills" class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>R</li>
+            <li>Machine Learning</li>
+            <li>Data Visualization</li>
+        </ul>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:zmk36@pitt.edu">zmk36@pitt.edu</a></p>
+    <section id="contact" class="card">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, feel free to reach out!</p>
+        <a href="mailto:your.email@example.com" class="button">Email Me</a>
     </section>
 
-  </div>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2024 Zorykto | All Rights Reserved</p>
-  </footer>
+<footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
