@@ -4,53 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Data Scientist Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffebee; /* Light Pink */
             color: #333;
             margin: 0;
             padding: 0;
+            animation: backgroundAnimation 10s infinite alternate;
         }
+
+        @keyframes backgroundAnimation {
+            0% { background-color: #ffebee; }
+            100% { background-color: #ffe0f0; }
+        }
+
         header {
-            background-color: #4CAF50; /* Green */
+            background-color: #ff4081; /* Bright Pink */
             color: white;
             padding: 20px;
             text-align: center;
+            border-bottom: 5px solid #ff80ab; /* Lighter Pink */
         }
+
         nav {
             margin: 20px 0;
         }
+
         nav a {
             margin: 0 15px;
             color: white;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
         }
+
+        nav a:hover {
+            color: #ffe0f0;
+        }
+
         .button {
-            background-color: #4CAF50; /* Green */
+            background-color: #ff80ab; /* Lighter Pink */
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             margin: 4px 2px;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
         }
+
+        .button:hover {
+            background-color: #ff4081; /* Bright Pink */
+        }
+
         .card {
             background-color: white;
-            border: 1px solid #e0e0e0;
-            border-radius: 10px;
+            border-radius: 15px;
             padding: 20px;
             margin: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
         .container {
             width: 80%;
             margin: auto;
         }
+
         footer {
             background-color: #333;
             color: white;
@@ -59,6 +89,29 @@
             position: relative;
             bottom: 0;
             width: 100%;
+        }
+
+        h2 {
+            color: #ff4081; /* Bright Pink */
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #ffe0f0; /* Light Pink */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+
+        li:hover {
+            background: #ff80ab; /* Lighter Pink */
+            color: white;
         }
     </style>
 </head>
@@ -78,25 +131,25 @@
 
     <section id="about" class="card">
         <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am a data scientist with a passion for turning data into actionable insights.</p>
+        <p>Welcome to my portfolio! I am a data scientist with a passion for turning data into actionable insights. Let's explore my work!</p>
     </section>
 
     <section id="projects" class="card">
         <h2>Projects</h2>
         <ul>
-            <li>Project 1: Description of your project.</li>
-            <li>Project 2: Description of your project.</li>
-            <li>Project 3: Description of your project.</li>
+            <li>🌟 Project 1: Description of your project.</li>
+            <li>🌟 Project 2: Description of your project.</li>
+            <li>🌟 Project 3: Description of your project.</li>
         </ul>
     </section>
 
     <section id="skills" class="card">
         <h2>Skills</h2>
         <ul>
-            <li>Python</li>
-            <li>R</li>
-            <li>Machine Learning</li>
-            <li>Data Visualization</li>
+            <li>💻 Python</li>
+            <li>📊 R</li>
+            <li>🧠 Machine Learning</li>
+            <li>📈 Data Visualization</li>
         </ul>
     </section>
 
