@@ -3,221 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <title>Zorykto Kusyk - Data Scientist Portfolio</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Plotly for visualizations -->
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #ffebee; /* Light Pink */
-            color: #333;
+        /* CSS Styles */
+
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
-            animation: backgroundAnimation 10s infinite alternate;
+            box-sizing: border-box;
         }
 
-        @keyframes backgroundAnimation {
-            0% { background-color: #ffebee; }
-            100% { background-color: #ffe0f0; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
         }
 
+        /* Header */
         header {
-            background-color: #ff4081; /* Bright Pink */
-            color: white;
-            padding: 20px;
             text-align: center;
-            border-bottom: 5px solid #ff80ab; /* Lighter Pink */
+            margin-bottom: 20px;
         }
 
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Section Styles */
+        section {
             margin: 20px 0;
-        }
-
-        .profile img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 5px solid #ff80ab; /* Lighter Pink */
-        }
-
-        nav {
-            margin: 20px 0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffe0f0;
-        }
-
-        .button {
-            background-color: #ff80ab; /* Lighter Pink */
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 20px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #ff4081; /* Bright Pink */
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 15px;
             padding: 20px;
-            margin: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        .card:hover {
-            transform: translateY(-5px);
+        section h2 {
+            color: #444;
+            margin-bottom: 10px;
         }
 
-        .container {
-            width: 80%;
-            margin: auto;
+        .project {
+            margin-bottom: 15px;
         }
 
+        /* Footer */
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        h2 {
-            color: #ff4081; /* Bright Pink */
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background: #ffe0f0; /* Light Pink */
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 10px;
-            transition: background 0.3s;
-        }
-
-        li:hover {
-            background: #ff80ab; /* Lighter Pink */
-            color: white;
-        }
-
-        .fun-fact {
-            font-style: italic;
-            color: #ff4081; /* Bright Pink */
             margin-top: 20px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
+<!-- Header -->
 <header>
-    <div class="profile">
-        <img src="https://github.com/yourusername.png" alt="Your Name's Profile Picture">
-        <h1>Your Name</h1>
-    </div>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#learning">Learning</a>
-        <a href="#collaborate">Collaborate</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <h1>Zorykto Kusyk</h1>
+    <p>Data Scientist & Health Informatics Master's Student</p>
 </header>
 
-<div class="container">
+<!-- About Section -->
+<section id="about">
+    <h2>Hi there 👋</h2>
+    <ul>
+        <li>🔭 <strong>Currently Working On:</strong> Developing projects using Python, R, SQL, Jupyter Notebook, HTML, CSS, and JavaScript, focusing on data science applications in healthcare.</li>
+        <li>🌱 <strong>Currently Learning:</strong>
+            <ul>
+                <li>Advanced Python and R through my coursework.</li>
+                <li>SQL for database management and querying.</li>
+                <li>Front-end web development with HTML, CSS, and JavaScript to enhance data presentation.</li>
+            </ul>
+        </li>
+        <li><strong>Current Courses:</strong>
+            <ul>
+                <li><em>Practical Statistics & Programming Using R:</em> Applying statistical methods and programming skills to health data analysis.</li>
+                <li><em>Introduction to Python for Health Informatics:</em> Learning Python programming with a focus on healthcare data management.</li>
+                <li><em>Healthcare Analytics and Data Visualization:</em> Exploring advanced healthcare analytics and data visualization techniques.</li>
+            </ul>
+        </li>
+        <li>👯 <strong>Looking to Collaborate On:</strong> Data Science projects involving machine learning, statistical analysis, and data visualization, as well as front-end development projects related to interactive data tools and dashboards.</li>
+        <li>🤔 <strong>Seeking Help With:</strong> Gaining industry experience by applying my skills to real-world healthcare data science projects.</li>
+        <li>💬 <strong>Ask Me About:</strong> Data science tools and techniques, including machine learning, statistical analysis, and data visualization, and front-end development using React, Bootstrap, and Tailwind CSS.</li>
+        <li>📫 <strong>How to Reach Me:</strong> Email: <a href="mailto:zmk36@pitt.edu">zmk36@pitt.edu</a></li>
+        <li>😄 <strong>Pronouns:</strong> He/Him</li>
+        <li>⚡ <strong>Fun Fact:</strong> I am a Graduate Student in Health Informatics at the University of Pittsburgh, concentrating in data science. My ambition is to use data-driven insights to improve healthcare outcomes and address real-world healthcare challenges. With experience in medical terminology and HIPAA training, I am passionate about using data science to enhance research processes and patient care.</li>
+    </ul>
+    <p>Feel free to reach out if you're interested in collaborating or discussing data science and healthcare!</p>
+</section>
 
-    <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>😄 Pronouns: He/Him</p>
-        <p>I am a self-taught programmer and a graduate student in health informatics at the University of Pittsburgh, concentrating in data science. My ambition is to use data-driven insights to improve healthcare outcomes and address real-world healthcare challenges. With experience in medical terminology and HIPAA training, I am passionate about using data science to enhance research processes and patient care.</p>
-        <p class="fun-fact">⚡ Fun Fact: I am a self-taught programmer!</p>
-    </section>
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Programming Languages:</strong> Python, R, SQL, HTML, CSS, JavaScript</li>
+        <li><strong>Libraries & Frameworks:</strong>
+            <ul>
+                <li><strong>Python:</strong> Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn</li>
+                <li><strong>JavaScript:</strong> React, jQuery</li>
+                <li><strong>CSS:</strong> Bootstrap, Tailwind CSS</li>
+            </ul>
+        </li>
+        <li><strong>Data Science Expertise:</strong> Statistical modeling, data manipulation, and visualization</li>
+        <li><strong>Machine Learning:</strong> Predictive modeling, data mining, and natural language processing</li>
+    </ul>
+</section>
 
-    <section id="skills" class="card">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Python, R, SQL, HTML, CSS, JavaScript</li>
-            <li>Libraries & Frameworks: 
-                <ul>
-                    <li>Python: Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn</li>
-                    <li>JavaScript: React, jQuery</li>
-                    <li>CSS: Bootstrap, Tailwind CSS</li>
-                </ul>
-            </li>
-            <li>Data Science Expertise: Statistical modeling, data manipulation, and visualization</li>
-            <li>Machine Learning: Predictive modeling, data mining, and natural language processing</li>
-        </ul>
-    </section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div id="project-1" class="project">
+        <h3>Project 1: Predicting Patient Outcomes</h3>
+        <p>Using machine learning to analyze patient outcomes from health data...</p>
+        <button onclick="displayProject1()">View Project</button>
+        <div id="project1-graph"></div>
+    </div>
+    <!-- Repeat for more projects -->
+</section>
 
-    <section id="projects" class="card">
-        <h2>🔭 Currently Working On</h2>
-        <p>Developing projects using Python, R, SQL, Jupyter Notebook, HTML, CSS, and JavaScript, focusing on data science applications in healthcare.</p>
-    </section>
+<!-- Blog Section -->
+<section id="blog">
+    <h2>Insights & Blog</h2>
+    <article>
+        <h3>Exploring the Power of Machine Learning in Healthcare</h3>
+        <p>A dive into my approach to machine learning in healthcare...</p>
+    </article>
+</section>
 
-    <section id="learning" class="card">
-        <h2>🌱 Currently Learning</h2>
-        <ul>
-            <li>Advanced Python and R through my coursework.</li>
-            <li>SQL for database management and querying.</li>
-            <li>Front-end web development with HTML, CSS, and JavaScript to enhance data presentation.</li>
-        </ul>
-        <h3>Current Courses:</h3>
-        <ul>
-            <li>Practical Statistics & Programming Using R: Applying statistical methods and programming skills to health data analysis.</li>
-            <li>Introduction to Python for Health Informatics: Learning Python programming with a focus on healthcare data management.</li>
-            <li>Healthcare Analytics and Data Visualization: Exploring advanced healthcare analytics and data visualization techniques.</li>
-        </ul>
-    </section>
-
-    <section id="collaborate" class="card">
-        <h2>👯 Looking to Collaborate On</h2>
-        <ul>
-            <li>Data Science projects involving machine learning, statistical analysis, and data visualization.</li>
-            <li>Front-end development projects related to interactive data tools and dashboards.</li>
-        </ul>
-        <h2>🤔 Seeking Help With</h2>
-        <p>Gaining industry experience by applying my skills to real-world healthcare data science projects.</p>
-    </section>
-
-    <section id="contact" class="card">
-        <h2>📫 How to Reach Me</h2>
-        <p>Email: <a href="mailto:zmk36@pitt.edu" class="button">zmk36@pitt.edu</a></p>
-        <p>💬 Ask Me About: Data science tools and techniques, including machine learning, statistical analysis, and data visualization. Front-end development using React, Bootstrap, and Tailwind CSS.</p>
-    </section>
-
-</div>
-
+<!-- Footer -->
 <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <p>Connect with me on <a href="https://github.com/zoryktom">GitHub</a> | © 2024 Zorykto Kusyk</p>
 </footer>
+
+<script>
+    // JavaScript for interactive elements
+
+    // Example Plotly visualization for a project
+    function displayProject1() {
+        const data = [{
+            x: [1, 2, 3, 4],
+            y: [10, 15, 13, 17],
+            type: 'scatter'
+        }];
+
+        Plotly.newPlot('project1-graph', data);
+    }
+
+    // Radar chart for skills visualization
+    const skillsData = {
+        type: 'scatterpolar',
+        r: [90, 85, 70, 75, 95],
+        theta: ['Python', 'R', 'SQL', 'Machine Learning', 'Data Visualization'],
+        fill: 'toself'
+    };
+
+    const layout = {
+        polar: {
+            radialaxis: {
+                visible: true,
+                range: [0, 100]
+            }
+        },
+        showlegend: false
+    };
+
+    Plotly.newPlot("skills-radar", [skillsData], layout);
+</script>
 
 </body>
 </html>
