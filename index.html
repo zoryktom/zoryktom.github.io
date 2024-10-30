@@ -17,12 +17,12 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            border: 1px solid #333;
+            border: 1px solid #000;
         }
         h1, h2, h3 {
             color: #000;
             font-weight: bold;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #000;
             padding-bottom: 5px;
         }
         a {
@@ -117,7 +117,7 @@
         <div id="project1">
             <h3>Project 1: Predicting Patient Outcomes</h3>
             <p>Using machine learning to analyze patient outcomes from health data.</p>
-            <button id="view-project1" onclick="displayProject1()">View Project Visualization</button>
+            <button onclick="displayProject1()">View Project Visualization</button>
             <div id="project1-graph"></div>
         </div>
     </section>
@@ -139,14 +139,15 @@
             marker: {color: '#333'}
         }];
 
-        Plotly.newPlot('project1-graph', data, {
+        const layout = {
             title: 'Patient Outcome Predictions',
             xaxis: {title: 'Time (Weeks)'},
             yaxis: {title: 'Predicted Outcome'}
-        });
+        };
+
+        Plotly.newPlot('project1-graph', data, layout);
     }
 </script>
 
 </body>
 </html>
-
