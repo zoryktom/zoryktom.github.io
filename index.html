@@ -17,12 +17,12 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            border: 1px solid #000;
+            border: 1px solid #333;
         }
         h1, h2, h3 {
             color: #000;
             font-weight: bold;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #333;
             padding-bottom: 5px;
         }
         a {
@@ -51,7 +51,7 @@
             text-align: center;
             padding: 10px;
             font-size: 0.9em;
-            color: #000;
+            color: #333;
         }
         button {
             background-color: #000;
@@ -59,9 +59,14 @@
             border: none;
             padding: 5px 10px;
             cursor: pointer;
+            margin-top: 10px;
         }
         button:hover {
             background-color: #333;
+        }
+        /* Graph Styles */
+        #project1-graph {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -112,7 +117,7 @@
         <div id="project1">
             <h3>Project 1: Predicting Patient Outcomes</h3>
             <p>Using machine learning to analyze patient outcomes from health data.</p>
-            <button onclick="displayProject1()">View Project Visualization</button>
+            <button id="view-project1" onclick="displayProject1()">View Project Visualization</button>
             <div id="project1-graph"></div>
         </div>
     </section>
@@ -129,12 +134,19 @@
         const data = [{
             x: [1, 2, 3, 4],
             y: [10, 15, 13, 17],
-            type: 'scatter'
+            type: 'scatter',
+            mode: 'lines+markers',
+            marker: {color: '#333'}
         }];
 
-        Plotly.newPlot('project1-graph', data);
+        Plotly.newPlot('project1-graph', data, {
+            title: 'Patient Outcome Predictions',
+            xaxis: {title: 'Time (Weeks)'},
+            yaxis: {title: 'Predicted Outcome'}
+        });
     }
 </script>
 
 </body>
 </html>
+
